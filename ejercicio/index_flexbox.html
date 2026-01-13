@@ -12,17 +12,13 @@
         html{
            /* background-color: bisque; /*Para ver los contornos de los elementos*/
            /* border: solid 1px black; /*Para ver los contornos de los elementos*/ 
-        
            
            font-size: 16px; /*Tamaño de fuente base*/
            font-family: sans-serif; /*Fuente por defecto*/
            font-weight: 600; /*Peso de fuente por defecto*/
         }
 
-        @media screen and (min-width: 1024px){ /*Estilos para pantallas grandes (escritorio)*/
-            
-            
-            body{
+        body{
                 display: grid; /*Usar grid layout flex para modo horizontal de diseño y grid layout para modo vertical*/
                 min-height: 100vh; /*Altura minima de la ventana gráfica*/
                 margin: 0; /*Quitar margen por defecto*/
@@ -33,76 +29,130 @@
                 row-gap: 10px; /*Espacio entre filas*/
                 column-gap: 10px; /*Espacio entre columnas*/
                 gap: 5px; /*Espacio entre filas y columnas*/
-
             }
 
-             header, aside, #titulo, .sec-1, .sec-2, footer  {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+        header, aside, #titulo, .sec-1, .sec-2, footer  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header, #titulo, footer, aside{
+            min-height: 85px;
+        }
+
+        header, footer{
+            background-color: green;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        aside{
+            background-color: red;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+
+        #titulo{
+            background-color: purple;
+            grid-column-start: 1 ;
+            grid-column-end:  4;
+        }
+
+        .secciones{
+            background-color: coral;   
+            min-height: 200px;       
+        }
+        .sec-1, .sec-2{
+            grid-column-start: 1 ;
+            grid-column-end:  4 ;
+        }
+
+        article{
+            background-color: blue;
+        } 
+
+        #articulos{
+            background-color: aqua;
+            grid-column-start: 1 ;
+            grid-column-end:  4 ;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #articulos article{
+            flex-basis: 50%;
+            border: 4px white solid;
+            min-height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        
+        }
+
+        @media  (min-width: 1024px){
+
+            body{
+                grid-template-rows: auto auto auto auto auto; /* FIX filas */
             }
 
-             header, #titulo, footer{
+            header, #titulo, footer{
                 min-height: 50px;
-            }
-
-            header, footer{
-                background-color: green;
-                grid-column-start: 1;
-                grid-column-end: 4;
             }
 
             aside{
                 background-color: red;
                 grid-row-start: 2;
                 grid-row-end: 5;
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+
+            .sec-1{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                min-height: 200px;
+                grid-row-start: 3; /* FIX */
+            }
+
+            .sec-2{
+                grid-column-start: 3;
+                grid-column-end: 4;
+                min-height: 200px;
+                grid-row-start: 3; /* FIX */
             }
 
             #titulo{
                 background-color: purple;
-                grid-column-start: 2 ;
-                grid-column-end:  4;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 2;
             }
-            .secciones{
-                background-color: coral;   
-                min-height: 200px;       
-            }
-
-            .section.secciones{
-                min-height: 200px;
-            }
-
-
-            article{
-                background-color: blue;
-            } 
 
             #articulos{
-                background-color: aqua;
                 grid-column-start: 2 ;
                 grid-column-end:  4 ;
-
-                display: flex;
-                flex-wrap: wrap;
-                /*height: 200px;*/
-                /*gap: 10px;*/
+                grid-row-start: 4; /* FIX */
             }
 
             #articulos article{
-                flex-basis: 20%; /*Cada artículo ocupa el 20% del contenedor*/
-                border: 4px white solid;
-                min-height: 140px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+            flex-basis: 20%;
+            border: 4px white solid;
+            min-height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        
         }
-    
+        }
     </style>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Document</title>
 </head>
 
@@ -127,7 +177,6 @@
         <article>10</article>
     </div>
     <footer>Footer</footer>
-
 </body>
 
 </html>
