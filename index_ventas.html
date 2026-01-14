@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../css/style_ventas.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="name_title raleway-Font">
+            Tienda de <span class="title">Muebles</span>
+        </h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- MENU CENTRADO -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- SEARCH A LA DERECHA -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO IMAGE -->
+    <section>
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1 style="font-size:50px">Tienda en línea de Boostrap</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <h2 class="title_two raleway-Font">Nuestros Productos</h2>
+
+        <section id="producto-1-section">
+            <article class="producto-1">
+                <div>
+                    <img src="img/producto1.jpg" alt="">
+                </div>
+
+                <div class="detalles_producto-1">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quidem quo, obcaecati
+                        adipisci ipsa commodi sit incidunt consequuntur consectetur nemo harum neque,
+                        magnam dolorem architecto ad eveniet cupiditate pariatur dignissimos.</p>
+                    <span>$12,000</span>
+                    <button type="button" class="btn btn-success">Agregar</button>
+                </div>
+            </article>
+        </section>
+
+        <!--    -->
+
+        <section id="producto-2-section">
+            <article class="producto-2">
+                <div>
+                    <img src="img/producto1.jpg" alt="">
+                </div>
+
+                <div class="detalles_producto-2">
+                    <h3>Producto 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quidem quo, obcaecati
+                        adipisci ipsa commodi sit incidunt consequuntur consectetur nemo harum neque,
+                        magnam dolorem architecto ad eveniet cupiditate pariatur dignissimos.</p>
+                    <span>$12,000</span>
+                    <button type="button" class="btn btn-success">Agregar</button>
+                </div>
+            </article>
+
+            <article class="producto-2">
+                <div>
+                    <img src="img/producto1.jpg" alt="">
+                </div>
+
+                <div class="detalles_producto-2">
+                    <h3>Producto 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quidem quo, obcaecati
+                        adipisci ipsa commodi sit incidunt consequuntur consectetur nemo harum neque,
+                        magnam dolorem architecto ad eveniet cupiditate pariatur dignissimos.</p>
+                    <span>$12,000</span>
+                    <button type="button" class="btn btn-success">Agregar</button>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>
