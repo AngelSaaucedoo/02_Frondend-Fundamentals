@@ -186,6 +186,18 @@ header {
     margin-top: auto;
 }
 
+/*Categorias*/
+.detalles_categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: rgba(13, 110, 253, 0.25);
+    color: #0d6efd;
+    padding: clamp(1.5rem, 3vw, 3rem);
+    text-align: center;
+}
+
 /* Responsivo */
 @media (max-width: 767px) {
 
