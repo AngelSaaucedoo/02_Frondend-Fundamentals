@@ -210,6 +210,28 @@ header {
     color: #0d6efd;
     text-decoration: underline;
 }
+
+
+/*Animacion*/
+.btn-zoom {
+    transition: transform 0.3s;
+}
+
+
+.btn-zoom{
+    transition: all 1s ease;
+}
+
+.btn-zoom:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.texto-header{
+    text-shadow: 0 0 5px #330ffd;
+}
+
+
 /* Responsivo */
 @media (max-width: 767px) {
 
